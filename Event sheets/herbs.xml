@@ -20,7 +20,6 @@
                                     <param id="0" name="Comparison">4</param>
                                     <param id="1" name="Speed">0</param>
                                 </condition>
-                                <condition behavior="8Direction" id="0" name="Is moving" type="player" />
                             </conditions>
                             <actions />
                             <sub-events>

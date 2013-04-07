@@ -751,27 +751,6 @@
                                 <projectile-speed>0</projectile-speed>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Platform">
-                            <properties>
-                                <max-speed>0</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                                <jump-strength>0</jump-strength>
-                                <gravity>0</gravity>
-                                <max-fall-speed>0</max-fall-speed>
-                                <default-controls>No</default-controls>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="8Direction">
-                            <properties>
-                                <max-speed>0</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                                <directions>4 directions</directions>
-                                <set-angle>No</set-angle>
-                                <default-controls>Yes</default-controls>
-                            </properties>
-                        </behavior-instance>
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -1222,63 +1201,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="NPC1">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>2</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <ID>3</ID>
-                        <Range>160</Range>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Turret2">
-                            <properties>
-                                <range>64</range>
-                                <rate-of-fire>0</rate-of-fire>
-                                <rotate>No</rotate>
-                                <rotate-speed>0</rotate-speed>
-                                <target-mode>First in range</target-mode>
-                                <predictive-aim>No</predictive-aim>
-                                <projectile-speed>0</projectile-speed>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="CustomMovement">
-                            <properties>
-                                <stepping-mode>Vertical then horizontal</stepping-mode>
-                                <pixels-per-step>32</pixels-per-step>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Pathfinding">
-                            <properties>
-                                <cell-size>32</cell-size>
-                                <cell-border>0</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>64</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>No</rotate-object>
-                                <diagonals>Disabled</diagonals>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>352</x>
-                        <y>320</y>
-                        <z>0</z>
-                        <width>27.468641281</width>
-                        <height>37.278869629</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.763157904</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="BoxT">
                     <properties>
                         <text></text>
@@ -1540,6 +1462,8 @@
                     <instance-variables>
                         <ID>4</ID>
                         <Range>160</Range>
+                        <axis>x</axis>
+                        <isAttacking>0</isAttacking>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Turret2">
@@ -1559,17 +1483,12 @@
                                 <pixels-per-step>32</pixels-per-step>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Pathfinding">
+                        <behavior-instance type="MoveTo">
                             <properties>
-                                <cell-size>32</cell-size>
-                                <cell-border>0</cell-border>
-                                <obstacles>Solids</obstacles>
-                                <max-speed>64</max-speed>
-                                <acceleration>1000</acceleration>
-                                <deceleration>2000</deceleration>
-                                <rotate-speed>135</rotate-speed>
-                                <rotate-object>No</rotate-object>
-                                <diagonals>Disabled</diagonals>
+                                <activated>Yes</activated>
+                                <max-speed>100</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -1590,7 +1509,7 @@
                 </instance>
                 <instance type="Sight">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -1600,16 +1519,16 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>326.128143311</x>
-                        <y>720.325195313</y>
+                        <x>-214.281738281</x>
+                        <y>600.171875</y>
                         <z>0</z>
-                        <width>160</width>
-                        <height>1</height>
+                        <width>221.238937378</width>
+                        <height>139.382644653</height>
                         <depth>0</depth>
-                        <hotspotX>0</hotspotX>
+                        <hotspotX>0.048</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.100000001</opacity>
                     </world>
                 </instance>
                 <instance type="Detector">
@@ -2408,6 +2327,138 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Sight2">
+                    <properties>
+                        <initial-visibility>Invisible</initial-visibility>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-32.543266296</x>
+                        <y>-64.592857361</y>
+                        <z>0</z>
+                        <width>131.7449646</width>
+                        <height>9.459381104</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NPC1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-frame>2</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <ID>4</ID>
+                        <Range>160</Range>
+                        <axis>x</axis>
+                        <isAttacking>0</isAttacking>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Turret2">
+                            <properties>
+                                <range>64</range>
+                                <rate-of-fire>0</rate-of-fire>
+                                <rotate>No</rotate>
+                                <rotate-speed>0</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>0</projectile-speed>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="CustomMovement">
+                            <properties>
+                                <stepping-mode>Vertical then horizontal</stepping-mode>
+                                <pixels-per-step>32</pixels-per-step>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="MoveTo">
+                            <properties>
+                                <activated>Yes</activated>
+                                <max-speed>100</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>315.487915039</x>
+                        <y>357.465179443</y>
+                        <z>0</z>
+                        <width>27.468641281</width>
+                        <height>37.278869629</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.763157904</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="NPC1">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-frame>2</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <ID>4</ID>
+                        <Range>160</Range>
+                        <axis>x</axis>
+                        <isAttacking>0</isAttacking>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Turret2">
+                            <properties>
+                                <range>64</range>
+                                <rate-of-fire>0</rate-of-fire>
+                                <rotate>No</rotate>
+                                <rotate-speed>0</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>0</projectile-speed>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="CustomMovement">
+                            <properties>
+                                <stepping-mode>Vertical then horizontal</stepping-mode>
+                                <pixels-per-step>32</pixels-per-step>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="MoveTo">
+                            <properties>
+                                <activated>Yes</activated>
+                                <max-speed>100</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>421.992584229</x>
+                        <y>311.117889404</y>
+                        <z>0</z>
+                        <width>27.468641281</width>
+                        <height>37.278869629</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.763157904</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

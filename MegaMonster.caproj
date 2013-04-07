@@ -24,9 +24,7 @@
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
-        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
-        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
         <behavior author="Rex.Rainbow" id="Rex_MoveTo" version="1">MoveTo</behavior>
@@ -535,7 +533,7 @@
                 <texture />
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="NPC">
+        <object-folder expanded="1" name="NPC">
             <object-type name="NPC1">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
@@ -680,7 +678,15 @@
                 </behaviors>
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
-                        <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.048" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.048" y="0.504425" />
+                                <point x="0.688" y="0.0309734" />
+                                <point x="0.938" y="0.274337" />
+                                <point x="0.944" y="0.752213" />
+                                <point x="0.7" y="0.973451" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                 </animation-folder>
             </object-type>
@@ -705,12 +711,6 @@
                     </behavior-type>
                     <behavior-type name="Turret">
                         <behavior id="Turret" />
-                    </behavior-type>
-                    <behavior-type name="Platform">
-                        <behavior id="Platform" />
-                    </behavior-type>
-                    <behavior-type name="8Direction">
-                        <behavior id="EightDir" />
                     </behavior-type>
                 </behaviors>
                 <animation-folder expanded="1">
@@ -1059,6 +1059,19 @@
         <object-type name="Text">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Sight2">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Pin">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="TiledSolids" plugin-id="TiledBg">
@@ -1112,6 +1125,8 @@
             <instance-variables>
                 <instance-variable name="ID" type="number" />
                 <instance-variable name="Range" type="number" />
+                <instance-variable name="axis" type="string" />
+                <instance-variable name="isAttacking" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Turret2">
@@ -1120,8 +1135,8 @@
                 <behavior-type name="CustomMovement">
                     <behavior id="custom" />
                 </behavior-type>
-                <behavior-type name="Pathfinding">
-                    <behavior id="Pathfinding" />
+                <behavior-type name="MoveTo">
+                    <behavior id="Rex_MoveTo" />
                 </behavior-type>
             </behaviors>
         </family>
@@ -1136,7 +1151,7 @@
         <layout-folder expanded="1" name="Map">
             <layout>Map.xml</layout>
         </layout-folder>
-        <layout-folder expanded="0" name="Battle">
+        <layout-folder expanded="1" name="Battle">
             <layout-folder expanded="1" name="SavageMonster">
                 <layout>Battle.xml</layout>
             </layout-folder>
@@ -1148,7 +1163,7 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-folder expanded="0" name="Map">
+        <event-folder expanded="1" name="Map">
             <event-sheet>herbs.xml</event-sheet>
             <event-sheet>map.xml</event-sheet>
             <event-sheet>monsterSlot.xml</event-sheet>

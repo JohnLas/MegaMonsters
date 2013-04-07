@@ -3,12 +3,21 @@
     <!--This is a UI state file - its content describes the user interface settings when the event sheet was last open.
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
-    <scroll-pos>625</scroll-pos>
-    <conditions-column>263</conditions-column>
-    <actions-namecolumn>23</actions-namecolumn>
+    <scroll-pos>725</scroll-pos>
+    <conditions-column>314</conditions-column>
+    <actions-namecolumn>129</actions-namecolumn>
     <condition-namecolumns>
-        <nest>20</nest>
-        <nest>74</nest>
+        <nest>89</nest>
+        <nest>119</nest>
+        <nest>107</nest>
+        <nest>91</nest>
+        <nest>99</nest>
+        <nest>22</nest>
+        <nest>22</nest>
+        <nest>22</nest>
+        <nest>22</nest>
+        <nest>22</nest>
+        <nest>22</nest>
         <nest>20</nest>
     </condition-namecolumns>
 </c2uistate>

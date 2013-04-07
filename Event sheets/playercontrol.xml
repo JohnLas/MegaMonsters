@@ -30,9 +30,6 @@
                 <condition id="-2" name="On start of layout" type="System" />
             </conditions>
             <actions>
-                <action behavior="8Direction" id="2" name="Set ignoring input" type="player">
-                    <param id="0" name="Input">1</param>
-                </action>
                 <action id="-1" name="Set X" type="Mire">
                     <param id="0" name="X">player.X</param>
                 </action>
