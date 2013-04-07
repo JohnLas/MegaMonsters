@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>OtherPlayers</name>
+    <events>
+        <variable constant="0" name="playerId" static="0" type="text"></variable>
+        <event-block>
+            <conditions>
+                <condition id="-2" name="On start of layout" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Connect" type="WebSocket">
+                    <param id="0" name="URL">&quot;ws://198.211.120.192:1337&quot;</param>
+                    <param id="1" name="Protocol (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="OtherPlayer">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fake&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" type="OtherPlayer" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-6" name="Every X seconds" type="System">
+                    <param id="0" name="Interval (seconds)">0.1</param>
+                </condition>
+                <condition id="4" name="Is open" type="WebSocket" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">PosX</param>
+                    <param id="1" name="Value">int(Player.X)</param>
+                </action>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">PosY</param>
+                    <param id="1" name="Value">int(Player.Y)</param>
+                </action>
+                <action id="4" name="Clean all" type="Hash" />
+                <action id="3" name="Set value at current entry" type="Hash">
+                    <param id="0" name="Key name">&quot;action&quot;</param>
+                    <param id="1" name="Value">&quot;sendPosition&quot;</param>
+                </action>
+                <action id="3" name="Set value at current entry" type="Hash">
+                    <param id="0" name="Key name">&quot;userId&quot;</param>
+                    <param id="1" name="Value">playerId</param>
+                </action>
+                <action id="3" name="Set value at current entry" type="Hash">
+                    <param id="0" name="Key name">&quot;X&quot;</param>
+                    <param id="1" name="Value">PosX</param>
+                </action>
+                <action id="3" name="Set value at current entry" type="Hash">
+                    <param id="0" name="Key name">&quot;Y&quot;</param>
+                    <param id="1" name="Value">PosY</param>
+                </action>
+                <action id="2" name="Send text" type="WebSocket">
+                    <param id="0" name="Data">Hash.ToString</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="3" name="On message" type="WebSocket" />
+            </conditions>
+            <actions>
+                <action id="5" name="Load hash table from JSON string" type="Hash">
+                    <param id="0" name="JSON string">WebSocket.MessageText</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-8" name="Compare two values" type="System">
+                            <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;connected&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" type="System">
+                            <param id="0" name="Variable">playerId</param>
+                            <param id="1" name="Value">Hash.AtKeys(&quot;userId&quot;)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-8" name="Compare two values" type="System">
+                            <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;newPlayer&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <comment></comment>
+                        <event-block>
+                            <conditions>
+                                <condition id="-14" name="Compare variable" type="System">
+                                    <param id="0" name="Variable">playerId</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">Hash.AtKeys(&quot;userId&quot;)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" type="System">
+                                    <param id="0" name="Object to create">OtherPlayer</param>
+                                    <param id="1" name="Layer">1</param>
+                                    <param id="2" name="X">int(Hash.AtKeys(&quot;X&quot;))</param>
+                                    <param id="3" name="Y">int(Hash.AtKeys(&quot;Y&quot;))</param>
+                                </action>
+                                <action id="-10" name="Set value" type="OtherPlayer">
+                                    <param id="0" name="Instance variable">id</param>
+                                    <param id="1" name="Value">Hash.AtKeys(&quot;userId&quot;)</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-8" name="Compare two values" type="System">
+                            <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;deletePlayer&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="-11" name="For Each" type="System">
+                                    <param id="0" name="Object">OtherPlayer</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block>
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" type="OtherPlayer">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Hash.AtKeys(&quot;userId&quot;)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" type="OtherPlayer" />
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-8" name="Compare two values" type="System">
+                            <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;setPosition&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="-11" name="For Each" type="System">
+                                    <param id="0" name="Object">OtherPlayer</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block>
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" type="OtherPlayer">
+                                            <param id="0" name="Instance variable">id</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">Hash.AtKeys(&quot;userId&quot;)</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block>
+                                            <conditions>
+                                                <condition id="-7" name="Compare instance variable" type="OtherPlayer">
+                                                    <param id="0" name="Instance variable">axis</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Value">&quot;X&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="MoveTo" id="4" name="Set target position" type="OtherPlayer">
+                                                    <param id="0" name="X">int(Hash.AtKeys(&quot;X&quot;))</param>
+                                                    <param id="1" name="Y">OtherPlayer.Y</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block>
+                                            <conditions>
+                                                <condition id="-22" name="Else" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action behavior="MoveTo" id="4" name="Set target position" type="OtherPlayer">
+                                                    <param id="0" name="X">OtherPlayer.X</param>
+                                                    <param id="1" name="Y">int(Hash.AtKeys(&quot;Y&quot;))</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" title="SpriteOtherPlayer">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Angle">0&#x0D;&#x0A;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" type="OtherPlayer">
+                            <param id="0" name="Animation">&quot;A0&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Angle">90&#x0D;&#x0A;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" type="OtherPlayer">
+                            <param id="0" name="Animation">&quot;A90&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Angle">180&#x0D;&#x0A;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" type="OtherPlayer">
+                            <param id="0" name="Animation">&quot;A180&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
+                            <param id="0" name="Comparison">0</param>
+                            <param id="1" name="Angle">270&#x0D;&#x0A;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" type="OtherPlayer">
+                            <param id="0" name="Animation">&quot;A270&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block>
+            <conditions>
+                <condition behavior="MoveTo" id="0" name="On hit target position" type="OtherPlayer" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="OtherPlayer">
+                            <param id="0" name="Instance variable">axis</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;X&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" type="OtherPlayer">
+                            <param id="0" name="Instance variable">axis</param>
+                            <param id="1" name="Value">&quot;Y&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="-22" name="Else" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" type="OtherPlayer">
+                            <param id="0" name="Instance variable">axis</param>
+                            <param id="1" name="Value">&quot;X&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

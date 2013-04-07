@@ -11,6 +11,7 @@
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
+        <plugin author="Rex.Rainbow" id="Rex_Hash" version="0.5">Hash</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
@@ -18,6 +19,7 @@
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -26,6 +28,7 @@
         <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Rex.Rainbow" id="Rex_MoveTo" version="1">MoveTo</behavior>
         <behavior author="Scirra" id="Turret" version="1">Turret</behavior>
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="custom" version="1">Custom Movement</behavior>
@@ -663,7 +666,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Player">
+        <object-folder expanded="1" name="Player">
             <object-type name="player">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -935,6 +938,78 @@
                     </animation>
                 </animation-folder>
             </object-type>
+            <object-type name="OtherPlayer">
+                <plugin id="Sprite" />
+                <instance-variables>
+                    <instance-variable name="id" type="string" />
+                    <instance-variable name="targetX" type="number" />
+                    <instance-variable name="targetY" type="number" />
+                    <instance-variable name="Variable1" type="number" />
+                    <instance-variable name="axis" type="string" />
+                </instance-variables>
+                <behaviors>
+                    <behavior-type name="MoveTo">
+                        <behavior id="Rex_MoveTo" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="3" loop="1" name="A0" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="3" loop="1" name="A90" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="1" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="3" loop="1" name="A180" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                    <animation framecount="3" loop="1" name="A270" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="1" y="1" />
+                                <point x="0" y="1" />
+                                <point x="0" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="Other">
             <object-type name="Function">
@@ -953,6 +1028,12 @@
                 <plugin id="WebStorage" />
             </object-type>
         </object-folder>
+        <object-type name="WebSocket">
+            <plugin id="C2WebSocket" />
+        </object-type>
+        <object-type global="1" name="Hash">
+            <plugin id="Rex_Hash" />
+        </object-type>
     </object-folder>
     <families>
         <family name="TiledSolids" plugin-id="TiledBg">
@@ -1036,12 +1117,14 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-folder expanded="0" name="Map">
+        <event-folder expanded="1" name="Map">
             <event-sheet>herbs.xml</event-sheet>
             <event-sheet>map.xml</event-sheet>
             <event-sheet>monsterSlot.xml</event-sheet>
             <event-sheet>playercontrol.xml</event-sheet>
             <event-sheet>Npc.xml</event-sheet>
+            <event-sheet>OtherPlayers.xml</event-sheet>
+            <event-sheet>MapMain.xml</event-sheet>
         </event-folder>
         <event-folder expanded="0" name="Battle">
             <event-sheet>battle.xml</event-sheet>
@@ -1056,6 +1139,7 @@
         <global-instance type="Function" />
         <global-instance type="WebStorage" />
         <global-instance type="Keyboard" />
+        <global-instance type="WebSocket" />
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MapMain</name>
+    <events>
+        <include>playercontrol</include>
+        <include>Npc</include>
+        <include>monsterSlot</include>
+        <include>OtherPlayers</include>
+        <include>map</include>
+        <include>herbs</include>
+    </events>
+</c2eventsheet>

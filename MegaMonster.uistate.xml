@@ -10,15 +10,11 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout>Map</layout>
-        <layout>Battle</layout>
-        <layout active="1">Layout 1</layout>
-        <event-sheet>playercontrol</event-sheet>
-        <event-sheet>herbs</event-sheet>
-        <event-sheet>battle</event-sheet>
-        <event-sheet>Npc</event-sheet>
+        <layout active="1">Map</layout>
+        <event-sheet>OtherPlayers</event-sheet>
         <event-sheet>map</event-sheet>
-        <event-sheet>monsterSlot</event-sheet>
+        <event-sheet>playercontrol</event-sheet>
+        <event-sheet>MapMain</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="Project settings" />

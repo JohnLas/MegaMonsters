@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
     <name>Map</name>
-    <event-sheet>playercontrol</event-sheet>
+    <event-sheet>MapMain</event-sheet>
     <size>
         <width>800</width>
         <height>600</height>
@@ -2374,6 +2374,44 @@
                         <hotspotY>0</hotspotY>
                     </world>
                 </instance>
+                <instance type="OtherPlayer">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <id>fake</id>
+                        <targetX>-100</targetX>
+                        <targetY>-100</targetY>
+                        <Variable1>0</Variable1>
+                        <axis></axis>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="MoveTo">
+                            <properties>
+                                <activated>Yes</activated>
+                                <max-speed>130</max-speed>
+                                <acceleration>0</acceleration>
+                                <deceleration>0</deceleration>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>-185.022079468</x>
+                        <y>-69.253196716</y>
+                        <z>0</z>
+                        <width>28</width>
+                        <height>38</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -2737,6 +2775,11 @@
                 <width>5</width>
                 <height>1</height>
                 <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="Hash">
+            <properties>
+                <initial-data></initial-data>
             </properties>
         </instance>
     </nonworld-instances>

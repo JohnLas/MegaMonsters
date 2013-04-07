@@ -3,11 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>playercontrol</name>
     <events>
-        <include>monsterSlot</include>
-        <include>map</include>
-        <include>Npc</include>
-        <include>battle</include>
-        <include>herbs</include>
         <variable constant="0" name="PosX" static="0" type="number">0</variable>
         <variable constant="0" name="PosY" static="0" type="number">0</variable>
         <variable constant="0" name="SetControl" static="0" type="number">0</variable>
