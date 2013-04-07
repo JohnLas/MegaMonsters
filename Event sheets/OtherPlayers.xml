@@ -10,7 +10,7 @@
             </conditions>
             <actions>
                 <action id="0" name="Connect" type="WebSocket">
-                    <param id="0" name="URL">&quot;ws://198.211.120.192:1337&quot;</param>
+                    <param id="0" name="URL">&quot;ws://198.211.120.192:1338&quot;</param>
                     <param id="1" name="Protocol (optional)">&quot;&quot;</param>
                 </action>
             </actions>

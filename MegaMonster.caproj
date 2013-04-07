@@ -7,6 +7,7 @@
     <unique-id>2a85ezly76mep</unique-id>
     <saved-with-version>12302</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
@@ -53,7 +54,7 @@
         <prop name="Fullscreen in browser">Off</prop>
         <prop name="Hide address bar">Yes</prop>
         <prop name="Loader style">Progress bar &amp; logo</prop>
-        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview browser">Opera</prop>
         <prop name="Sampling">Linear</prop>
         <prop name="Use iOS retina display">No</prop>
     </configuration-settings>
@@ -395,6 +396,24 @@
             <object-type name="TextBOX">
                 <plugin id="Text" />
             </object-type>
+            <object-type name="FacebookConnect">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.0361446" y="0.142857" />
+                                <point x="0.5" y="0.047619" />
+                                <point x="0.963855" y="0.142857" />
+                                <point x="0.963855" y="0.5" />
+                                <point x="0.939759" y="0.761905" />
+                                <point x="0.060241" y="0.761905" />
+                                <point x="0.0361446" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="MapElements">
             <object-type name="GapBottom">
@@ -666,7 +685,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="1" name="Player">
+        <object-folder expanded="0" name="Player">
             <object-type name="player">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -1027,12 +1046,18 @@
             <object-type name="WebStorage">
                 <plugin id="WebStorage" />
             </object-type>
+            <object-type name="Facebook">
+                <plugin id="Facebook" />
+            </object-type>
+            <object-type global="1" name="Hash">
+                <plugin id="Rex_Hash" />
+            </object-type>
+            <object-type name="WebSocket">
+                <plugin id="C2WebSocket" />
+            </object-type>
         </object-folder>
-        <object-type name="WebSocket">
-            <plugin id="C2WebSocket" />
-        </object-type>
-        <object-type global="1" name="Hash">
-            <plugin id="Rex_Hash" />
+        <object-type name="Text">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families>
@@ -1108,16 +1133,22 @@
         </family>
     </families>
     <layout-folder expanded="1">
-        <layout-folder expanded="0" name="Map">
+        <layout-folder expanded="1" name="Map">
             <layout>Map.xml</layout>
         </layout-folder>
         <layout-folder expanded="0" name="Battle">
-            <layout>Battle.xml</layout>
+            <layout-folder expanded="1" name="SavageMonster">
+                <layout>Battle.xml</layout>
+            </layout-folder>
+            <layout-folder expanded="1" name="OtherPlayer" />
+        </layout-folder>
+        <layout-folder expanded="1" name="Menu">
+            <layout>FacebookConnect.xml</layout>
         </layout-folder>
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-folder expanded="1" name="Map">
+        <event-folder expanded="0" name="Map">
             <event-sheet>herbs.xml</event-sheet>
             <event-sheet>map.xml</event-sheet>
             <event-sheet>monsterSlot.xml</event-sheet>
@@ -1128,6 +1159,9 @@
         </event-folder>
         <event-folder expanded="0" name="Battle">
             <event-sheet>battle.xml</event-sheet>
+        </event-folder>
+        <event-folder expanded="0" name="Menu">
+            <event-sheet>FacebookConnect.xml</event-sheet>
         </event-folder>
     </event-folder>
     <global-instances>
@@ -1140,6 +1174,12 @@
         <global-instance type="WebStorage" />
         <global-instance type="Keyboard" />
         <global-instance type="WebSocket" />
+        <global-instance type="Facebook">
+            <properties>
+                <app-id>546229238754687</app-id>
+                <app-secret>d6dafe4c6e6ef84ab13ca6fd9f5cbb39</app-secret>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder expanded="1" />
     <music-folder expanded="1" />
