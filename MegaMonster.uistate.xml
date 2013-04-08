@@ -15,6 +15,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <event-sheet>FacebookConnect</event-sheet>
         <event-sheet>OtherPlayers</event-sheet>
         <event-sheet>Npc</event-sheet>
+        <event-sheet>playercontrol</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="Project settings" />

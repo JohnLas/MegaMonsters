@@ -566,7 +566,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" title="Sprite">
+        <event-group description="" title="Sprite">
             <sub-events>
                 <event-block collapsed="1">
                     <conditions>
@@ -702,7 +702,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group collapsed="1" description="" title="Axis">
+        <event-group description="" title="Axis">
             <sub-events>
                 <event-block collapsed="1">
                     <conditions>
