@@ -26,7 +26,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <family expanded="1" name="TiledSolids" />
         <family expanded="1" name="SpriteSolids" />
         <family expanded="1" name="npc" />
-        <family expanded="0" name="dresseurs" />
+        <family expanded="1" name="dresseurs" />
         <family expanded="0" name="joystick" />
     </families-expanded>
 </c2uistate>
