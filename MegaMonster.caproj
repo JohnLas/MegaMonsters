@@ -7,7 +7,6 @@
     <unique-id>2a85ezly76mep</unique-id>
     <saved-with-version>12302</saved-with-version>
     <used-plugins>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
         <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
@@ -18,9 +17,11 @@
         <plugin author="Rex.Rainbow" id="Rex_Hash" version="0.5">Hash</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -57,7 +58,7 @@
         <prop name="Use iOS retina display">No</prop>
     </configuration-settings>
     <object-folder expanded="1">
-        <object-folder expanded="0" name="InterfaceElements">
+        <object-folder expanded="1" name="InterfaceElements">
             <object-folder expanded="0" name="DropDown">
                 <object-type name="List">
                     <plugin id="List" />
@@ -322,7 +323,7 @@
                     </animation>
                 </animation-folder>
             </object-type>
-            <object-type name="btnOk">
+            <object-type name="BoutonOk">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
                     <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
@@ -692,7 +693,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Player">
+        <object-folder expanded="1" name="Player">
             <object-type name="player">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -702,6 +703,9 @@
                     <instance-variable name="TargetY" type="number" />
                     <instance-variable name="PosX" type="number" />
                     <instance-variable name="PosY" type="number" />
+                    <instance-variable name="login" type="string" />
+                    <instance-variable name="lastPositionX" type="number" />
+                    <instance-variable name="lastPositionY" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="BoundToLayout">
@@ -722,6 +726,7 @@
                         <frame duration="1" hotspotX="0.515152" hotspotY="0.5">
                             <image-point name="Imagepoint 1" x="0.484848" y="0.909091" />
                             <image-point name="Imagepoint 2" x="0.515152" y="0" />
+                            <image-point name="Imagepoint 3" x="0.484848" y="-0.159091" />
                             <collision-poly>
                                 <point x="0" y="1" />
                                 <point x="0" y="0.477273" />
@@ -964,6 +969,8 @@
                     <instance-variable name="targetY" type="number" />
                     <instance-variable name="Variable1" type="number" />
                     <instance-variable name="axis" type="string" />
+                    <instance-variable name="login" type="string" />
+                    <instance-variable name="loginTextUID" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="MoveTo">
@@ -972,7 +979,11 @@
                 </behaviors>
                 <animation-folder expanded="1">
                     <animation framecount="3" loop="1" name="A0" pingpong="0" repeatcount="1" repeatto="0" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <image-point name="Imagepoint 1" x="0.5" y="0.5" />
+                            <image-point name="Imagepoint 2" x="0.5" y="0.5" />
+                            <image-point name="Imagepoint 3" x="0.5" y="-0.157895" />
+                        </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     </animation>
@@ -1071,6 +1082,26 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="ErrorText">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelCreateAvatar">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="InputLogin">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Button2">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="TextLogin">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Pin">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
     <families>
         <family name="TiledSolids" plugin-id="TiledBg">
@@ -1126,6 +1157,8 @@
                 <instance-variable name="Range" type="number" />
                 <instance-variable name="axis" type="string" />
                 <instance-variable name="isAttacking" type="number" />
+                <instance-variable name="name" type="string" />
+                <instance-variable name="nameTextId" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Turret2">
@@ -1145,6 +1178,11 @@
                 <member>fanaStick</member>
             </members>
         </family>
+        <family name="Players" plugin-id="Sprite">
+            <members>
+                <member>OtherPlayer</member>
+            </members>
+        </family>
     </families>
     <layout-folder expanded="1">
         <layout-folder expanded="1" name="Map">
@@ -1158,6 +1196,7 @@
         </layout-folder>
         <layout-folder expanded="1" name="Menu">
             <layout>FacebookConnect.xml</layout>
+            <layout>CreateAvatar.xml</layout>
         </layout-folder>
         <layout>Layout 1.xml</layout>
     </layout-folder>
@@ -1168,14 +1207,15 @@
             <event-sheet>monsterSlot.xml</event-sheet>
             <event-sheet>playercontrol.xml</event-sheet>
             <event-sheet>Npc.xml</event-sheet>
-            <event-sheet>OtherPlayers.xml</event-sheet>
+            <event-sheet>Multiplayer.xml</event-sheet>
             <event-sheet>MapMain.xml</event-sheet>
         </event-folder>
         <event-folder expanded="0" name="Battle">
             <event-sheet>battle.xml</event-sheet>
         </event-folder>
-        <event-folder expanded="0" name="Menu">
+        <event-folder expanded="1" name="Menu">
             <event-sheet>FacebookConnect.xml</event-sheet>
+            <event-sheet>CreateAvatar.xml</event-sheet>
         </event-folder>
     </event-folder>
     <global-instances>

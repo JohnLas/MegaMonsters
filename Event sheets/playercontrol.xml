@@ -30,11 +30,23 @@
                 <condition id="-2" name="On start of layout" type="System" />
             </conditions>
             <actions>
+                <action id="-3" name="Set position" type="player">
+                    <param id="0" name="X">PosX</param>
+                    <param id="1" name="Y">PosY</param>
+                </action>
                 <action id="-1" name="Set X" type="Mire">
                     <param id="0" name="X">player.X</param>
                 </action>
                 <action id="-2" name="Set Y" type="Mire">
                     <param id="0" name="Y">player.Y</param>
+                </action>
+                <action id="-4" name="Set position to another object" type="TextLogin">
+                    <param id="0" name="Object">player</param>
+                    <param id="1" name="Image point (optional)">3</param>
+                </action>
+                <action behavior="Pin" id="0" name="Pin to object" type="TextLogin">
+                    <param id="0" name="Pin to">player</param>
+                    <param id="1" name="Mode">0</param>
                 </action>
                 <action id="-1" name="Set X" type="playerbox">
                     <param id="0" name="X">PosX</param>
@@ -55,6 +67,9 @@
                 <action behavior="Pin" id="0" name="Pin to object" type="Mire">
                     <param id="0" name="Pin to">player</param>
                     <param id="1" name="Mode">0</param>
+                </action>
+                <action id="0" name="Set text" type="TextLogin">
+                    <param id="0" name="Text">playerLogin</param>
                 </action>
             </actions>
             <sub-events>

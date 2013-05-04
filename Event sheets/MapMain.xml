@@ -3,10 +3,11 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>MapMain</name>
     <events>
+        <variable constant="0" name="playerLogin" static="0" type="text"></variable>
         <include>playercontrol</include>
         <include>Npc</include>
         <include>monsterSlot</include>
-        <include>OtherPlayers</include>
+        <include>Multiplayer</include>
         <include>map</include>
         <include>herbs</include>
     </events>

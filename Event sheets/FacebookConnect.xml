@@ -5,26 +5,157 @@
     <events>
         <event-block>
             <conditions>
-                <condition id="3" name="On touched object" type="Touch">
-                    <param id="0" name="Object">FacebookConnect</param>
-                </condition>
+                <condition id="-2" name="On start of layout" type="System" />
             </conditions>
             <actions>
-                <action id="2" name="Log in" type="Facebook">
-                    <param id="0" name="Stream permission">0</param>
-                    <param id="1" name="Action permission">0</param>
+                <action id="0" name="Connect" type="WebSocket">
+                    <param id="0" name="URL">&quot;ws://localhost:1337&quot;</param>
+                    <param id="1" name="Protocol (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
         <event-block>
             <conditions>
-                <condition id="2" name="On user logged in" type="Facebook" />
+                <condition id="-2" name="On start of layout" type="System" />
             </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" type="System">
-                    <param id="0" name="Layout">Map</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" type="OtherPlayer">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fake&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" type="OtherPlayer" />
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
+        <event-group description="" title="FacebookConnection">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="2" name="On user logged in" type="Facebook" />
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Clean all" type="Hash" />
+                        <action id="3" name="Set value at current entry" type="Hash">
+                            <param id="0" name="Key name">&quot;action&quot;</param>
+                            <param id="1" name="Value">&quot;connectUser&quot;</param>
+                        </action>
+                        <action id="3" name="Set value at current entry" type="Hash">
+                            <param id="0" name="Key name">&quot;idFacebook&quot;</param>
+                            <param id="1" name="Value">facebook.UserID</param>
+                        </action>
+                        <action id="2" name="Send text" type="WebSocket">
+                            <param id="0" name="Data">Hash.ToString</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block>
+                    <conditions>
+                        <condition id="3" name="On touched object" type="Touch">
+                            <param id="0" name="Object">FacebookConnect</param>
+                        </condition>
+                        <condition id="0" name="Is ready" type="Facebook" />
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Log in" type="Facebook">
+                            <param id="0" name="Stream permission">0</param>
+                            <param id="1" name="Action permission">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" title="FacebookListener">
+            <sub-events>
+                <event-block>
+                    <conditions>
+                        <condition id="3" name="On message" type="WebSocket" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Load hash table from JSON string" type="Hash">
+                            <param id="0" name="JSON string">WebSocket.MessageText</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition id="-8" name="Compare two values" type="System">
+                                    <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;create&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">playerId</param>
+                                    <param id="1" name="Value">Hash.AtKeys(&quot;idFacebook&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">PosX</param>
+                                    <param id="1" name="Value">Hash.AtKeys(&quot;X&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">PosY</param>
+                                    <param id="1" name="Value">Hash.AtKeys(&quot;Y&quot;)</param>
+                                </action>
+                                <action id="-2" name="Go to layout" type="System">
+                                    <param id="0" name="Layout">CreateAvatar</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-8" name="Compare two values" type="System">
+                                    <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;connected&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">playerId</param>
+                                    <param id="1" name="Value">Hash.AtKeys(&quot;idFacebook&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">playerLogin</param>
+                                    <param id="1" name="Value">Hash.AtKeys(&quot;login&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">PosX</param>
+                                    <param id="1" name="Value">Hash.AtKeys(&quot;X&quot;)</param>
+                                </action>
+                                <action id="-9" name="Set value" type="System">
+                                    <param id="0" name="Variable">PosY</param>
+                                    <param id="1" name="Value">Hash.AtKeys(&quot;Y&quot;)</param>
+                                </action>
+                                <action id="-2" name="Go to layout" type="System">
+                                    <param id="0" name="Layout">Map</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition id="-8" name="Compare two values" type="System">
+                                    <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">&quot;notConnected&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" type="ErrorText">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

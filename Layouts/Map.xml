@@ -1234,7 +1234,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>192</x>
-                        <y>0</y>
+                        <y>-256</y>
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -1655,8 +1655,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>92.683433533</x>
-                        <y>78.6068573</y>
+                        <x>96</x>
+                        <y>75</y>
                         <z>0</z>
                         <width>10.409347534</width>
                         <height>9.007137299</height>
@@ -1680,6 +1680,9 @@
                         <TargetY>0</TargetY>
                         <PosX>0</PosX>
                         <PosY>0</PosY>
+                        <login>login</login>
+                        <lastPositionX>0</lastPositionX>
+                        <lastPositionY>0</lastPositionY>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="BoundToLayout">
@@ -1722,7 +1725,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>93.588790894</x>
+                        <x>96</x>
                         <y>64</y>
                         <z>0</z>
                         <width>27.193260193</width>
@@ -1836,8 +1839,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>10</x>
-                        <y>10</y>
+                        <x>0</x>
+                        <y>-256</y>
                         <z>0</z>
                         <width>374</width>
                         <height>30</height>
@@ -2273,7 +2276,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="btnOk">
+                <instance type="BoutonOk">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-frame>0</initial-frame>
@@ -2407,60 +2410,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="NPC1">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>2</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <ID>4</ID>
-                        <Range>160</Range>
-                        <axis>x</axis>
-                        <isAttacking>0</isAttacking>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Turret2">
-                            <properties>
-                                <range>64</range>
-                                <rate-of-fire>0</rate-of-fire>
-                                <rotate>No</rotate>
-                                <rotate-speed>0</rotate-speed>
-                                <target-mode>First in range</target-mode>
-                                <predictive-aim>No</predictive-aim>
-                                <projectile-speed>0</projectile-speed>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="CustomMovement">
-                            <properties>
-                                <stepping-mode>Vertical then horizontal</stepping-mode>
-                                <pixels-per-step>32</pixels-per-step>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="MoveTo">
-                            <properties>
-                                <activated>Yes</activated>
-                                <max-speed>200</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>178.556991577</x>
-                        <y>406.367340088</y>
-                        <z>0</z>
-                        <width>27.468641281</width>
-                        <height>37.278869629</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.763157904</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="Sight">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -2473,8 +2422,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-214.281738281</x>
-                        <y>600.171875</y>
+                        <x>-320</x>
+                        <y>768</y>
                         <z>0</z>
                         <width>221.238937378</width>
                         <height>139.382644653</height>
@@ -2570,8 +2519,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>542.041381836</x>
-                        <y>70.287597656</y>
+                        <x>544</x>
+                        <y>-192</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
@@ -2594,8 +2543,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>542.52355957</x>
-                        <y>97.512710571</y>
+                        <x>544</x>
+                        <y>-160</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
@@ -2618,8 +2567,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>543.52355957</x>
-                        <y>123.554428101</y>
+                        <x>544</x>
+                        <y>-128</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
@@ -2642,8 +2591,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>542.551879883</x>
-                        <y>149.554443359</y>
+                        <x>544</x>
+                        <y>-96</y>
                         <z>0</z>
                         <width>150</width>
                         <height>22</height>
@@ -2660,10 +2609,12 @@
                     </properties>
                     <instance-variables>
                         <id>fake</id>
-                        <targetX>-100</targetX>
-                        <targetY>-100</targetY>
+                        <targetX>0</targetX>
+                        <targetY>0</targetY>
                         <Variable1>0</Variable1>
-                        <axis></axis>
+                        <axis>X</axis>
+                        <login></login>
+                        <loginTextUID>0</loginTextUID>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="MoveTo">
@@ -2678,8 +2629,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>-185.022079468</x>
-                        <y>-69.253196716</y>
+                        <x>-352</x>
+                        <y>0</y>
                         <z>0</z>
                         <width>28</width>
                         <height>38</height>
@@ -2725,6 +2676,8 @@
                         <Range>160</Range>
                         <axis>x</axis>
                         <isAttacking>0</isAttacking>
+                        <name></name>
+                        <nameTextId>0</nameTextId>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Turret2">
@@ -2756,8 +2709,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>315.487915039</x>
-                        <y>357.465179443</y>
+                        <x>-352</x>
+                        <y>768</y>
                         <z>0</z>
                         <width>27.468641281</width>
                         <height>37.278869629</height>
@@ -2768,56 +2721,32 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="NPC1">
+                <instance type="TextLogin">
                     <properties>
+                        <text>Login</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>2</initial-frame>
-                        <collisions>Enabled</collisions>
+                        <font>Arial,-16</font>
+                        <color>192,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Center</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
                     </properties>
-                    <instance-variables>
-                        <ID>4</ID>
-                        <Range>160</Range>
-                        <axis>x</axis>
-                        <isAttacking>0</isAttacking>
-                    </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="Turret2">
-                            <properties>
-                                <range>64</range>
-                                <rate-of-fire>0</rate-of-fire>
-                                <rotate>No</rotate>
-                                <rotate-speed>0</rotate-speed>
-                                <target-mode>First in range</target-mode>
-                                <predictive-aim>No</predictive-aim>
-                                <projectile-speed>0</projectile-speed>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="CustomMovement">
-                            <properties>
-                                <stepping-mode>Vertical then horizontal</stepping-mode>
-                                <pixels-per-step>32</pixels-per-step>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="MoveTo">
-                            <properties>
-                                <activated>Yes</activated>
-                                <max-speed>200</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                            </properties>
-                        </behavior-instance>
+                        <behavior-instance type="Pin" />
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>421.992584229</x>
-                        <y>311.117889404</y>
+                        <x>95</x>
+                        <y>40</y>
                         <z>0</z>
-                        <width>27.468641281</width>
-                        <height>37.278869629</height>
+                        <width>160</width>
+                        <height>32</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.763157904</hotspotY>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -2851,8 +2780,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>10</x>
-                        <y>10</y>
+                        <x>0</x>
+                        <y>-256</y>
                         <z>0</z>
                         <width>60.507350922</width>
                         <height>59.332450867</height>
@@ -2879,7 +2808,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>96</x>
-                        <y>13</y>
+                        <y>-256</y>
                         <z>0</z>
                         <width>590</width>
                         <height>54</height>
@@ -2898,8 +2827,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>116.544181824</x>
-                        <y>56.588912964</y>
+                        <x>128</x>
+                        <y>-224</y>
                         <z>0</z>
                         <width>25.903493881</width>
                         <height>23.910917282</height>
@@ -2919,8 +2848,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>249.644668579</x>
-                        <y>57.508102417</y>
+                        <x>256</x>
+                        <y>-224</y>
                         <z>0</z>
                         <width>25.903493881</width>
                         <height>23.910917282</height>
@@ -2940,8 +2869,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>382.510498047</x>
-                        <y>55.671112061</y>
+                        <x>384</x>
+                        <y>-224</y>
                         <z>0</z>
                         <width>25.903493881</width>
                         <height>23.910917282</height>
@@ -2961,8 +2890,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>512.743591309</x>
-                        <y>56.590301514</y>
+                        <x>512</x>
+                        <y>-224</y>
                         <z>0</z>
                         <width>25.903493881</width>
                         <height>23.910917282</height>
@@ -2988,8 +2917,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>109.904052734</x>
-                        <y>20.872379303</y>
+                        <x>128</x>
+                        <y>-256</y>
                         <z>0</z>
                         <width>109.041000366</width>
                         <height>21.7310009</height>
@@ -3015,8 +2944,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>243.127441406</x>
-                        <y>21.790195465</y>
+                        <x>256</x>
+                        <y>-256</y>
                         <z>0</z>
                         <width>109.041000366</width>
                         <height>21.7310009</height>
@@ -3042,8 +2971,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>374.05255127</x>
-                        <y>20.870960236</y>
+                        <x>384</x>
+                        <y>-256</y>
                         <z>0</z>
                         <width>109.041000366</width>
                         <height>21.7310009</height>
@@ -3069,8 +2998,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>507.543518066</x>
-                        <y>20.87096405</y>
+                        <x>512</x>
+                        <y>-256</y>
                         <z>0</z>
                         <width>109.041000366</width>
                         <height>21.7310009</height>
@@ -3093,8 +3022,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>658.902282715</x>
-                        <y>39.225723267</y>
+                        <x>672</x>
+                        <y>-224</y>
                         <z>0</z>
                         <width>39.04586792</width>
                         <height>38.060806274</height>
@@ -3103,6 +3032,41 @@
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>0</opacity>
+                    </world>
+                </instance>
+                <instance type="Gaps">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-frame>3</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Turret">
+                            <properties>
+                                <range>22</range>
+                                <rate-of-fire>0</rate-of-fire>
+                                <rotate>No</rotate>
+                                <rotate-speed>0</rotate-speed>
+                                <target-mode>First in range</target-mode>
+                                <predictive-aim>No</predictive-aim>
+                                <projectile-speed>0</projectile-speed>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>192</x>
+                        <y>0</y>
+                        <z>0</z>
+                        <width>32</width>
+                        <height>32</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
                     </world>
                 </instance>
             </instances>
