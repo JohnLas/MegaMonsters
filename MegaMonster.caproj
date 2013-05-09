@@ -7,6 +7,7 @@
     <unique-id>2a85ezly76mep</unique-id>
     <saved-with-version>12302</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
         <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
@@ -21,7 +22,6 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -45,7 +45,7 @@
         <height>600</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
-    <first-layout>Map</first-layout>
+    <first-layout>Map1</first-layout>
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">No</prop>
@@ -531,6 +531,150 @@
                 <texture />
             </object-type>
             <object-type name="TiledBackground">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="Pierre">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="51" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="PierreG">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="Pont">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="TiledPierre">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="Arbre">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" speed="0">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Caillou">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="RocksBG">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="RocksBottom">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="Rocks">
+                <plugin id="Sprite" />
+                <animation-folder expanded="1">
+                    <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="RocksLeft">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="RocksTop">
+                <plugin id="TiledBg" />
+                <texture />
+            </object-type>
+            <object-type name="RocksRight">
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
@@ -1102,11 +1246,22 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="BLACK">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
     </object-folder>
     <families>
         <family name="TiledSolids" plugin-id="TiledBg">
             <members>
+                <member>BLACK</member>
+                <member>Caillou</member>
                 <member>GapBottom</member>
+                <member>PierreG</member>
+                <member>RocksBottom</member>
+                <member>RocksLeft</member>
+                <member>RocksRight</member>
+                <member>RocksTop</member>
                 <member>Wall</member>
                 <member>Water</member>
                 <member>WaterDown</member>
@@ -1122,7 +1277,10 @@
         </family>
         <family name="SpriteSolids" plugin-id="Sprite">
             <members>
+                <member>Arbre</member>
                 <member>Gaps</member>
+                <member>Pierre</member>
+                <member>Rocks</member>
                 <member>WallAngles</member>
                 <member>WaterAngle</member>
             </members>
@@ -1186,7 +1344,8 @@
     </families>
     <layout-folder expanded="1">
         <layout-folder expanded="1" name="Map">
-            <layout>Map.xml</layout>
+            <layout>Map1.xml</layout>
+            <layout>Map2.xml</layout>
         </layout-folder>
         <layout-folder expanded="1" name="Battle">
             <layout-folder expanded="1" name="SavageMonster">

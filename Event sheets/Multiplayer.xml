@@ -214,7 +214,7 @@
                                                         </condition>
                                                     </conditions>
                                                     <actions>
-                                                        <action behavior="MoveTo" id="4" name="Set target position" type="OtherPlayer">
+                                                        <action behavior="MoveTo" id="4" name="Set target" type="OtherPlayer">
                                                             <param id="0" name="X">OtherPlayer.X</param>
                                                             <param id="1" name="Y">OtherPlayer.TargetY</param>
                                                         </action>
@@ -225,7 +225,7 @@
                                                         <condition id="-22" name="Else" type="System" />
                                                     </conditions>
                                                     <actions>
-                                                        <action behavior="MoveTo" id="4" name="Set target position" type="OtherPlayer">
+                                                        <action behavior="MoveTo" id="4" name="Set target" type="OtherPlayer">
                                                             <param id="0" name="X">OtherPlayer.targetX</param>
                                                             <param id="1" name="Y">OtherPlayer.Y</param>
                                                         </action>
@@ -322,7 +322,7 @@
                                     <param id="0" name="Instance variable">axis</param>
                                     <param id="1" name="Value">&quot;Y&quot;</param>
                                 </action>
-                                <action behavior="MoveTo" id="4" name="Set target position" type="OtherPlayer">
+                                <action behavior="MoveTo" id="4" name="Set target" type="OtherPlayer">
                                     <param id="0" name="X">OtherPlayer.X</param>
                                     <param id="1" name="Y">OtherPlayer.TargetY</param>
                                 </action>
@@ -337,7 +337,7 @@
                                     <param id="0" name="Instance variable">axis</param>
                                     <param id="1" name="Value">&quot;X&quot;</param>
                                 </action>
-                                <action behavior="MoveTo" id="4" name="Set target position" type="OtherPlayer">
+                                <action behavior="MoveTo" id="4" name="Set target" type="OtherPlayer">
                                     <param id="0" name="X">OtherPlayer.targetX</param>
                                     <param id="1" name="Y">OtherPlayer.Y</param>
                                 </action>

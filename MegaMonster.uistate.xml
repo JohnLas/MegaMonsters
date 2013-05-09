@@ -10,9 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1">FacebookConnect</layout>
+        <layout>FacebookConnect</layout>
         <layout>CreateAvatar</layout>
-        <layout>Map</layout>
+        <layout>Map1</layout>
+        <layout active="1">Map2</layout>
         <event-sheet>Multiplayer</event-sheet>
         <event-sheet>MapMain</event-sheet>
         <event-sheet>FacebookConnect</event-sheet>
@@ -25,9 +26,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="0">
+    <families-expanded root="1">
         <family expanded="1" name="TiledSolids" />
-        <family expanded="1" name="SpriteSolids" />
+        <family expanded="0" name="SpriteSolids" />
         <family expanded="1" name="npc" />
         <family expanded="0" name="dresseurs" />
         <family expanded="0" name="joystick" />
