@@ -28,7 +28,7 @@
             <instances>
                 <instance type="LabelCreateAvatar">
                     <properties>
-                        <text>Choisis le nom de ton personnage</text>
+                        <text>Choisis ton pseudo</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-24,400,0</font>
                         <color>0,0,0</color>
@@ -41,8 +41,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>222</x>
-                        <y>248</y>
+                        <x>11</x>
+                        <y>15</y>
                         <z>0</z>
                         <width>373</width>
                         <height>40</height>
@@ -69,10 +69,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>215</x>
-                        <y>289</y>
+                        <x>12</x>
+                        <y>67</y>
                         <z>0</z>
-                        <width>383</width>
+                        <width>272</width>
                         <height>24</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
@@ -85,11 +85,15 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <action></action>
+                        <idAction>0</idAction>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>411</x>
-                        <y>329</y>
+                        <x>334</x>
+                        <y>77</y>
                         <z>0</z>
                         <width>74</width>
                         <height>24</height>

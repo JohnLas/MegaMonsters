@@ -12,23 +12,19 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>FacebookConnect</layout>
         <layout>CreateAvatar</layout>
-        <layout>Map1</layout>
-        <layout active="1">Map2</layout>
-        <event-sheet>Multiplayer</event-sheet>
-        <event-sheet>MapMain</event-sheet>
+        <layout>ChoosePokemon</layout>
+        <layout>Map</layout>
         <event-sheet>FacebookConnect</event-sheet>
-        <event-sheet>CreateAvatar</event-sheet>
-        <event-sheet>map</event-sheet>
-        <event-sheet>playercontrol</event-sheet>
+        <event-sheet active="1">Multiplayer</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="Project settings" />
         <property expanded="0" name="Window Size" />
         <property expanded="1" name="Configuration Settings" />
     </properties>
-    <families-expanded root="1">
+    <families-expanded root="0">
         <family expanded="1" name="TiledSolids" />
-        <family expanded="0" name="SpriteSolids" />
+        <family expanded="1" name="SpriteSolids" />
         <family expanded="1" name="npc" />
         <family expanded="0" name="dresseurs" />
         <family expanded="0" name="joystick" />

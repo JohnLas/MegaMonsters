@@ -765,7 +765,7 @@
                                 </condition>
                             </conditions>
                             <actions>
-                                <action behavior="MoveTo" id="4" name="Set target" type="dresseurs">
+                                <action behavior="MoveTo" id="4" name="Set target position" type="dresseurs">
                                     <param id="0" name="X">Player.X</param>
                                     <param id="1" name="Y">dresseurs.Y</param>
                                 </action>
@@ -776,7 +776,7 @@
                                 <condition id="-22" name="Else" type="System" />
                             </conditions>
                             <actions>
-                                <action behavior="MoveTo" id="4" name="Set target" type="dresseurs">
+                                <action behavior="MoveTo" id="4" name="Set target position" type="dresseurs">
                                     <param id="0" name="X">dresseurs.X</param>
                                     <param id="1" name="Y">Player.Y</param>
                                 </action>

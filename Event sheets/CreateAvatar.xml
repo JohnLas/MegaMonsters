@@ -13,21 +13,20 @@
                 </condition>
             </conditions>
             <actions>
-                <action id="4" name="Clean all" type="Hash" />
-                <action id="3" name="Set value at current entry" type="Hash">
-                    <param id="0" name="Key name">&quot;action&quot;</param>
-                    <param id="1" name="Value">&quot;createUser&quot;</param>
-                </action>
-                <action id="3" name="Set value at current entry" type="Hash">
-                    <param id="0" name="Key name">&quot;login&quot;</param>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">playerLogin</param>
                     <param id="1" name="Value">InputLogin.Text</param>
                 </action>
-                <action id="2" name="Send text" type="WebSocket">
-                    <param id="0" name="Data">Hash.ToString</param>
+                <action id="-9" name="Set value" type="System">
+                    <param id="0" name="Variable">playerId</param>
+                    <param id="1" name="Value">facebook.UserID</param>
+                </action>
+                <action id="-2" name="Go to layout" type="System">
+                    <param id="0" name="Layout">ChoosePokemon</param>
                 </action>
             </actions>
         </event-block>
-        <event-block>
+        <event-block disabled="1">
             <conditions>
                 <condition id="3" name="On message" type="WebSocket" />
             </conditions>
@@ -37,7 +36,7 @@
                 </action>
             </actions>
             <sub-events>
-                <event-block>
+                <event-block disabled="1">
                     <conditions>
                         <condition id="-8" name="Compare two values" type="System">
                             <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
@@ -45,19 +44,7 @@
                             <param id="2" name="Second value">&quot;profileCreated&quot;</param>
                         </condition>
                     </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" type="System">
-                            <param id="0" name="Variable">playerLogin</param>
-                            <param id="1" name="Value">Hash.AtKeys(&quot;login&quot;)</param>
-                        </action>
-                        <action id="-9" name="Set value" type="System">
-                            <param id="0" name="Variable">playerId</param>
-                            <param id="1" name="Value">Hash.AtKeys(&quot;idFacebook&quot;)</param>
-                        </action>
-                        <action id="-2" name="Go to layout" type="System">
-                            <param id="0" name="Layout">Map1</param>
-                        </action>
-                    </actions>
+                    <actions />
                 </event-block>
             </sub-events>
         </event-block>

@@ -9,7 +9,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" type="System">
-                    <param id="0" name="Layout">Map1</param>
+                    <param id="0" name="Layout">Map</param>
                 </action>
                 <action id="-12" name="Set group active" type="System">
                     <param id="0" name="Group name">&quot;Encounter&quot;</param>
