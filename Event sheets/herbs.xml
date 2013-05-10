@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>herbs</name>
+    <name>Herbs</name>
     <events>
         <variable constant="0" name="EncounterRate" static="0" type="number">10</variable>
         <event-group description="" title="Encounter">

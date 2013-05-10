@@ -10,15 +10,12 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1">FacebookConnect</layout>
+        <layout>FacebookConnect</layout>
         <layout>CreateAvatar</layout>
-        <layout>Map</layout>
-        <event-sheet>Multiplayer</event-sheet>
-        <event-sheet>MapMain</event-sheet>
+        <layout>ChoosePokemon</layout>
+        <layout active="1">Map</layout>
         <event-sheet>FacebookConnect</event-sheet>
-        <event-sheet>CreateAvatar</event-sheet>
-        <event-sheet>map</event-sheet>
-        <event-sheet>playercontrol</event-sheet>
+        <event-sheet>Multiplayer</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="Project settings" />

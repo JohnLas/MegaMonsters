@@ -4,11 +4,11 @@
     <name>MapMain</name>
     <events>
         <variable constant="0" name="playerLogin" static="0" type="text"></variable>
-        <include>playercontrol</include>
+        <include>Player</include>
         <include>Npc</include>
-        <include>monsterSlot</include>
+        <include>Interfaces</include>
         <include>Multiplayer</include>
-        <include>map</include>
-        <include>herbs</include>
+        <include>Map</include>
+        <include>Herbs</include>
     </events>
 </c2eventsheet>
