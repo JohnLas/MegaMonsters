@@ -4,13 +4,8 @@
 It is entirely optional and the project will load without it.  If you are placing the project under source control,
 you probably do not want to add any .uistate.xml files to the repository.-->
     <scroll-pos>0</scroll-pos>
-<<<<<<< HEAD
-    <conditions-column>120</conditions-column>
-    <actions-namecolumn>25</actions-namecolumn>
-=======
     <conditions-column>383</conditions-column>
     <actions-namecolumn>109</actions-namecolumn>
->>>>>>> refacto
     <condition-namecolumns>
         <nest>22</nest>
         <nest>22</nest>
