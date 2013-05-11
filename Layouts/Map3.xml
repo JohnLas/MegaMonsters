@@ -376,7 +376,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -396,7 +396,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -786,7 +786,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -806,7 +806,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -918,7 +918,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1550,7 +1550,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -1570,7 +1570,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2130,7 +2130,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2150,7 +2150,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -2170,7 +2170,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TiledBackground2">
+                <instance type="BGHerbe">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
@@ -3510,6 +3510,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <action></action>
+                        <idAction>0</idAction>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

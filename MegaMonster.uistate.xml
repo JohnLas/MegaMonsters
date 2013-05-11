@@ -12,17 +12,18 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     <open-tabs>
         <layout>FacebookConnect</layout>
         <layout>CreateAvatar</layout>
-        <layout active="1">Map1</layout>
+        <layout>Map1</layout>
         <layout>Map2</layout>
         <layout>Map3</layout>
+        <layout active="1">Town1</layout>
         <event-sheet>Multiplayer</event-sheet>
         <event-sheet>MapMain</event-sheet>
         <event-sheet>FacebookConnect</event-sheet>
         <event-sheet>CreateAvatar</event-sheet>
-        <event-sheet>map</event-sheet>
-        <event-sheet>playercontrol</event-sheet>
-        <event-sheet>herbs</event-sheet>
+        <event-sheet>Map</event-sheet>
+        <event-sheet>Herbs</event-sheet>
         <event-sheet>Npc</event-sheet>
+        <event-sheet>Player</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="Project settings" />

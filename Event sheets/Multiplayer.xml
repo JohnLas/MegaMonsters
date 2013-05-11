@@ -247,7 +247,6 @@
                             </conditions>
                             <actions>
                                 <action id="-4" name="Set layer visible" type="System">
-<!--<<<<<<< HEAD-->
                                     <param id="0" name="Layer">&quot;PopUp&quot;</param>
                                     <param id="1" name="Visibility">1</param>
                                 </action>
@@ -258,11 +257,6 @@
                                     <param id="0" name="Instance variable">action</param>
                                     <param id="1" name="Value">&quot;acceptBattleRequest&quot;</param>
                                 </action>
-<!--=======
-                                    <param id="0" name="Layer">&quot;MultiplayerInteraction&quot;</param>
-                                    <param id="1" name="Visibility">1</param>
-                                </action>
->>>>>>> Developpement -->
                             </actions>
                         </event-block>
                     </sub-events>

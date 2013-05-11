@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
-        <variable constant="0" name="PosX" static="0" type="number">1152</variable>
-        <variable constant="0" name="PosY" static="0" type="number">160</variable>
+        <variable constant="0" name="PosX" static="0" type="number">96</variable>
+        <variable constant="0" name="PosY" static="0" type="number">64</variable>
         <variable constant="0" name="SetControl" static="0" type="number">0</variable>
         <variable constant="0" name="Command" static="0" type="number">0</variable>
         <variable constant="0" name="TileSize" static="0" type="number">12</variable>
