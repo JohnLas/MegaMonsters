@@ -7,14 +7,10 @@
     <unique-id>2a85ezly76mep</unique-id>
     <saved-with-version>12302</saved-with-version>
     <used-plugins>
-<<<<<<< HEAD
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
-=======
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
->>>>>>> Mapping and bug fixes
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
@@ -26,12 +22,6 @@
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
         <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
-<<<<<<< HEAD
-=======
-        <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
-        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
-        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
->>>>>>> Mapping and bug fixes
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -55,11 +45,7 @@
         <height>600</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
-<<<<<<< HEAD
     <first-layout>FacebookConnect</first-layout>
-=======
-    <first-layout>Map1</first-layout>
->>>>>>> Mapping and bug fixes
     <use-loader-layout>0</use-loader-layout>
     <configuration-settings>
         <prop name="Clear background">No</prop>
@@ -452,6 +438,15 @@
             </object-type>
         </object-folder>
         <object-folder expanded="1" name="MapElements">
+			<object-type name="GapBottom">
+                <plugin id="TiledBg" />
+
+
+
+
+
+                <texture />
+            </object-type>
             <object-type name="Gap">
                 <plugin id="TiledBg" />
                 <behaviors>
@@ -584,11 +579,7 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
-<<<<<<< HEAD
-<object-type name="Pierre">
-=======
             <object-type name="Pierre">
->>>>>>> Mapping and bug fixes
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
                     <animation framecount="51" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" speed="0">
@@ -662,16 +653,6 @@
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
                     <animation framecount="8" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" speed="0">
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
-<<<<<<< HEAD
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
-=======
                         <frame duration="1" hotspotX="0" hotspotY="0">
                             <collision-poly>
                                 <point x="0" y="0" />
@@ -702,7 +683,6 @@
                                 <point x="0" y="1" />
                             </collision-poly>
                         </frame>
->>>>>>> Mapping and bug fixes
                     </animation>
                 </animation-folder>
             </object-type>
@@ -721,11 +701,7 @@
             <object-type name="Rocks">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
-<<<<<<< HEAD
-                    <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
-=======
                     <animation framecount="28" loop="0" name="Default" pingpong="0" repeatcount="0" repeatto="0" speed="0">
->>>>>>> Mapping and bug fixes
                         <frame duration="1" hotspotX="0" hotspotY="0" />
                         <frame duration="1" hotspotX="0" hotspotY="0" />
                         <frame duration="1" hotspotX="0" hotspotY="0" />
@@ -769,8 +745,6 @@
                 <plugin id="TiledBg" />
                 <texture />
             </object-type>
-<<<<<<< HEAD
-=======
             <object-type name="DesertBG">
                 <plugin id="TiledBg" />
                 <texture />
@@ -988,7 +962,6 @@
                     </animation>
                 </animation-folder>
             </object-type>
->>>>>>> Mapping and bug fixes
         </object-folder>
         <object-folder expanded="0" name="NPC">
             <object-type name="NPC1">
@@ -1337,6 +1310,19 @@
                     </animation>
                 </animation-folder>
             </object-type>
+			<object-type name="Detector">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Pin">
+                        <behavior id="Pin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder expanded="1">
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
             <object-type name="HerbDetect">
                 <plugin id="Sprite" />
                 <animation-folder expanded="1">
@@ -1557,11 +1543,10 @@
                 </behavior-type>
             </behaviors>
         </object-type>
-<<<<<<< HEAD
-		<object-type name="BLACK">
+        <object-type name="BLACK">
             <plugin id="TiledBg" />
             <texture />
-		</object-type>
+        </object-type>
         <object-type name="Ennemy">
             <plugin id="Sprite" />
             <instance-variables>
@@ -1621,18 +1606,9 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="TextPopUp">
+		<object-type name="TextPopUp">
             <plugin id="Text" />
-        </object-type>
-        <object-type name="Sprite6">
-            <plugin id="Sprite" />
-            <animation-folder expanded="1">
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-=======
-        <object-type name="BLACK">
-            <plugin id="TiledBg" />
-            <texture />
+
         </object-type>
         <object-type name="TiledBackground7">
             <plugin id="TiledBg" />
@@ -1653,7 +1629,6 @@
             <animation-folder expanded="1">
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
                     <frame duration="1" hotspotX="0" hotspotY="0" />
->>>>>>> Mapping and bug fixes
                 </animation>
             </animation-folder>
         </object-type>
@@ -1662,19 +1637,14 @@
         <family name="TiledSolids" plugin-id="TiledBg">
             <members>
                 <member>BLACK</member>
-<<<<<<< HEAD
-				<member>Caillou</member>
-                <member>GapBottom</member>
-				<member>PierreG</member>
-=======
                 <member>Caillou</member>
+				<member>GapBottom</member>
                 <member>DRocksBottom</member>
                 <member>DRocksLeft</member>
                 <member>DRocksRight</member>
                 <member>DRocksTop</member>
                 <member>Gap</member>
                 <member>PierreG</member>
->>>>>>> Mapping and bug fixes
                 <member>RocksBottom</member>
                 <member>RocksLeft</member>
                 <member>RocksRight</member>
@@ -1695,17 +1665,12 @@
         <family name="SpriteSolids" plugin-id="Sprite">
             <members>
                 <member>Arbre</member>
-<<<<<<< HEAD
-                <member>Gaps</member>
-                <member>Pierre</member>
-=======
                 <member>Caillou2</member>
                 <member>DesertHouse</member>
                 <member>DesertRocks</member>
                 <member>Gaps</member>
                 <member>Pierre</member>
                 <member>Pyramid</member>
->>>>>>> Mapping and bug fixes
                 <member>Rocks</member>
                 <member>WallAngles</member>
                 <member>WaterAngle</member>
@@ -1770,15 +1735,10 @@
     </families>
     <layout-folder expanded="1">
         <layout-folder expanded="1" name="Map">
-<<<<<<< HEAD
-            <layout>Map.xml</layout>
-			<layout>Map1.xml</layout>
-			<layout>Map2.xml</layout>
-=======
+			<layout>Map.xml</layout>
             <layout>Map1.xml</layout>
             <layout>Map3.xml</layout>
             <layout>Map2.xml</layout>
->>>>>>> Mapping and bug fixes
         </layout-folder>
         <layout-folder expanded="1" name="Battle">
             <layout-folder expanded="1" name="SavageMonster">

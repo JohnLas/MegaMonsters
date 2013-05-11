@@ -149,11 +149,7 @@
                         <y>0</y>
                         <z>0</z>
                         <width>32</width>
-<<<<<<< HEAD
-                        <height>1216</height>
-=======
                         <height>937</height>
->>>>>>> Mapping and bug fixes
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -172,19 +168,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>595.653381348</x>
-                        <y>-26.783569336</y>
-                        <z>0</z>
-                        <width>212</width>
-                        <height>1248</height>
-=======
                         <x>589.653381348</x>
                         <y>-26.783569336</y>
                         <z>0</z>
                         <width>224</width>
                         <height>960</height>
->>>>>>> Mapping and bug fixes
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -2160,8 +2148,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-=======
                 <instance type="WaterRight">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -2274,7 +2260,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
->>>>>>> Mapping and bug fixes
             </instances>
             <effects />
         </layer>
@@ -2331,14 +2316,6 @@
                         <lastPositionY>0</lastPositionY>
                     </instance-variables>
                     <behavior-instances>
-<<<<<<< HEAD
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
-=======
->>>>>>> Mapping and bug fixes
                         <behavior-instance type="Bullet">
                             <properties>
                                 <speed>0</speed>
@@ -2370,21 +2347,13 @@
                                 <default-controls>No</default-controls>
                             </properties>
                         </behavior-instance>
-<<<<<<< HEAD
-=======
                         <behavior-instance type="ScrollTo" />
->>>>>>> Mapping and bug fixes
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>96</x>
-                        <y>64</y>
-=======
                         <x>1521</x>
                         <y>171</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>27.193260193</width>
                         <height>36.257678986</height>
@@ -2433,58 +2402,6 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-<<<<<<< HEAD
-                <instance type="fanaPad">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-107</x>
-                        <y>148</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="fanaStick">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <radius>0</radius>
-                        <XP>0</XP>
-                        <YP>0</YP>
-                        <dist>0</dist>
-                        <conAngle>0</conAngle>
-                    </instance-variables>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-75</x>
-                        <y>149</y>
-                        <z>0</z>
-                        <width>64</width>
-                        <height>64</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0.5</opacity>
-                    </world>
-                </instance>
-=======
->>>>>>> Mapping and bug fixes
                 <instance type="fanaTXT">
                     <properties>
                         <text>fana</text>
@@ -2654,32 +2571,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="WaterRight">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>800</x>
-                        <y>0</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>1216</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-=======
->>>>>>> Mapping and bug fixes
                 <instance type="WaterLeft">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -3045,43 +2936,13 @@
                         <opacity>0.100000001</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Detector">
-                    <properties>
-                        <initial-visibility>Invisible</initial-visibility>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Pin" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>-48.341552734</x>
-                        <y>220.3150177</y>
-                        <z>0</z>
-                        <width>20.624355316</width>
-                        <height>20.624355316</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="GapBottom">
-=======
                 <instance type="Gap">
->>>>>>> Mapping and bug fixes
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <hotspot>Top-left</hotspot>
                     </properties>
                     <behavior-instances>
                         <behavior-instance type="Solid" />
-<<<<<<< HEAD
-=======
                         <behavior-instance type="Turret">
                             <properties>
                                 <range>300</range>
@@ -3093,7 +2954,6 @@
                                 <projectile-speed>500</projectile-speed>
                             </properties>
                         </behavior-instance>
->>>>>>> Mapping and bug fixes
                     </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
@@ -18739,11 +18599,7 @@
                 <instance type="Pierre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
-                        <initial-frame>24</initial-frame>
-=======
                         <initial-frame>26</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -18752,11 +18608,7 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1760</x>
-=======
                         <x>1824</x>
->>>>>>> Mapping and bug fixes
                         <y>576</y>
                         <z>0</z>
                         <width>32</width>
@@ -18771,11 +18623,7 @@
                 <instance type="Pierre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
-                        <initial-frame>25</initial-frame>
-=======
                         <initial-frame>29</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -18784,13 +18632,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1792</x>
-                        <y>576</y>
-=======
                         <x>1824</x>
                         <y>608</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -18804,11 +18647,7 @@
                 <instance type="Pierre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
-                        <initial-frame>26</initial-frame>
-=======
                         <initial-frame>30</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -18817,13 +18656,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1824</x>
-                        <y>576</y>
-=======
                         <x>1760</x>
                         <y>640</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -18837,11 +18671,7 @@
                 <instance type="Pierre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
-                        <initial-frame>27</initial-frame>
-=======
                         <initial-frame>31</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -18850,13 +18680,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1760</x>
-                        <y>608</y>
-=======
                         <x>1792</x>
                         <y>640</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -18870,139 +18695,6 @@
                 <instance type="Pierre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
-                        <initial-frame>28</initial-frame>
-=======
-                        <initial-frame>32</initial-frame>
->>>>>>> Mapping and bug fixes
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-<<<<<<< HEAD
-                        <x>1792</x>
-                        <y>608</y>
-=======
-                        <x>1824</x>
-                        <y>640</y>
->>>>>>> Mapping and bug fixes
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
-                        <initial-frame>29</initial-frame>
-=======
-                        <initial-frame>33</initial-frame>
->>>>>>> Mapping and bug fixes
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-<<<<<<< HEAD
-                        <x>1824</x>
-                        <y>608</y>
-=======
-                        <x>1760</x>
-                        <y>704</y>
->>>>>>> Mapping and bug fixes
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
-                        <initial-frame>30</initial-frame>
-=======
-                        <initial-frame>34</initial-frame>
->>>>>>> Mapping and bug fixes
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-<<<<<<< HEAD
-                        <x>1760</x>
-                        <y>640</y>
-=======
-                        <x>1792</x>
-                        <y>704</y>
->>>>>>> Mapping and bug fixes
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
-                        <initial-frame>31</initial-frame>
-=======
-                        <initial-frame>35</initial-frame>
->>>>>>> Mapping and bug fixes
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-<<<<<<< HEAD
-                        <x>1792</x>
-                        <y>640</y>
-=======
-                        <x>1824</x>
-                        <y>704</y>
->>>>>>> Mapping and bug fixes
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-<<<<<<< HEAD
                         <initial-frame>32</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
@@ -19100,9 +18792,6 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>36</initial-frame>
-=======
-                        <initial-frame>36</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20366,17 +20055,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>24</initial-frame>
-=======
                 <instance type="Arbre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>7</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20385,13 +20067,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>992</x>
-                        <y>96</y>
-=======
                         <x>928</x>
                         <y>320</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -20402,17 +20079,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>25</initial-frame>
-=======
                 <instance type="Arbre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>6</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20421,13 +20091,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1024</x>
-                        <y>96</y>
-=======
                         <x>896</x>
                         <y>320</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -20438,17 +20103,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>27</initial-frame>
-=======
                 <instance type="Arbre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>7</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20457,13 +20115,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>992</x>
-                        <y>128</y>
-=======
                         <x>864</x>
                         <y>320</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -20474,17 +20127,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>28</initial-frame>
-=======
                 <instance type="Arbre">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>6</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20493,13 +20139,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1024</x>
-                        <y>128</y>
-=======
                         <x>832</x>
                         <y>320</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -20510,17 +20151,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>24</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20529,16 +20163,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1088</x>
-                        <y>160</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1920</x>
                         <y>672</y>
                         <z>0</z>
@@ -20547,22 +20171,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>25</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20571,16 +20187,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1120</x>
-                        <y>160</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1792</x>
                         <y>608</y>
                         <z>0</z>
@@ -20589,22 +20195,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>27</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20613,16 +20211,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1088</x>
-                        <y>192</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1440</x>
                         <y>160</y>
                         <z>0</z>
@@ -20631,22 +20219,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>28</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20655,64 +20235,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1120</x>
-                        <y>192</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>24</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1248</x>
-                        <y>96</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>25</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>1280</x>
-                        <y>96</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1408</x>
                         <y>192</y>
                         <z>0</z>
@@ -20721,22 +20243,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>27</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20745,16 +20259,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1248</x>
-                        <y>128</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1312</x>
                         <y>128</y>
                         <z>0</z>
@@ -20763,22 +20267,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>28</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20787,16 +20283,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1280</x>
-                        <y>128</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1344</x>
                         <y>160</y>
                         <z>0</z>
@@ -20805,22 +20291,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>24</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20832,34 +20310,19 @@
                         <x>1376</x>
                         <y>256</y>
                         <z>0</z>
-<<<<<<< HEAD
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <width>64</width>
                         <height>64</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>25</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20869,15 +20332,6 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>1408</x>
-<<<<<<< HEAD
-                        <y>256</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <y>288</y>
                         <z>0</z>
                         <width>64</width>
@@ -20885,22 +20339,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>27</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20909,16 +20355,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1376</x>
-                        <y>288</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1024</x>
                         <y>160</y>
                         <z>0</z>
@@ -20927,22 +20363,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Pierre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>28</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20951,16 +20379,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>1408</x>
-                        <y>288</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1088</x>
                         <y>224</y>
                         <z>0</z>
@@ -20969,22 +20387,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Arbre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>7</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -20993,16 +20403,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>928</x>
-                        <y>320</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>1216</x>
                         <y>160</y>
                         <z>0</z>
@@ -21011,22 +20411,14 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Arbre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>6</initial-frame>
-=======
                 <instance type="Caillou2">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
->>>>>>> Mapping and bug fixes
                         <collisions>Enabled</collisions>
                     </properties>
                     <behavior-instances>
@@ -21035,16 +20427,6 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-<<<<<<< HEAD
-                        <x>896</x>
-                        <y>320</y>
-                        <z>0</z>
-                        <width>32</width>
-                        <height>32</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-=======
                         <x>928</x>
                         <y>128</y>
                         <z>0</z>
@@ -21053,27 +20435,10 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
->>>>>>> Mapping and bug fixes
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="Arbre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>7</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>864</x>
-                        <y>320</y>
-=======
                 <instance type="Warp">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
@@ -21091,7 +20456,6 @@
                     <world>
                         <x>1152</x>
                         <y>64</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -21099,25 +20463,6 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-<<<<<<< HEAD
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Arbre">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>6</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>832</x>
-                        <y>320</y>
-=======
                         <opacity>0.5</opacity>
                     </world>
                 </instance>
@@ -21138,7 +20483,6 @@
                     <world>
                         <x>1504</x>
                         <y>96</y>
->>>>>>> Mapping and bug fixes
                         <z>0</z>
                         <width>32</width>
                         <height>32</height>
@@ -21146,31 +20490,7 @@
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
                         <angle>0</angle>
-<<<<<<< HEAD
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Pont">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <hotspot>Top-left</hotspot>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>574</x>
-                        <y>928</y>
-                        <z>0</z>
-                        <width>256</width>
-                        <height>96</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-=======
                         <opacity>0.5</opacity>
->>>>>>> Mapping and bug fixes
                     </world>
                 </instance>
             </instances>
@@ -21509,30 +20829,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-<<<<<<< HEAD
-                <instance type="fanaRangeBox">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>407.042633057</x>
-                        <y>361.862792969</y>
-                        <z>0</z>
-                        <width>847.000793457</width>
-                        <height>514.082275391</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>0</opacity>
-                    </world>
-                </instance>
-=======
->>>>>>> Mapping and bug fixes
             </instances>
             <effects />
         </layer>
@@ -21606,8 +20902,6 @@
             </instances>
             <effects />
         </layer>
-<<<<<<< HEAD
-=======
         <layer name="Layer 3">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
@@ -21695,7 +20989,6 @@
             </instances>
             <effects />
         </layer>
->>>>>>> Mapping and bug fixes
     </layers>
     <nonworld-instances>
         <instance type="Monsters">
