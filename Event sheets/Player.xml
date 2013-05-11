@@ -3,8 +3,8 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Player</name>
     <events>
-        <variable constant="0" name="PosX" static="0" type="number">0</variable>
-        <variable constant="0" name="PosY" static="0" type="number">0</variable>
+        <variable constant="0" name="PosX" static="0" type="number">1152</variable>
+        <variable constant="0" name="PosY" static="0" type="number">160</variable>
         <variable constant="0" name="SetControl" static="0" type="number">0</variable>
         <variable constant="0" name="Command" static="0" type="number">0</variable>
         <variable constant="0" name="TileSize" static="0" type="number">12</variable>
@@ -182,7 +182,7 @@
                         </event-block>
                     </sub-events>
                 </event-group>
-                <event-group collapsed="1" description="Controls for a floating(center on touch) based joystick. The method for hiding the control is arbitrary and you can do any way you want." title="Joystick">
+                <event-group description="Controls for a floating(center on touch) based joystick. The method for hiding the control is arbitrary and you can do any way you want." title="Joystick">
                     <sub-events>
                         <variable constant="0" name="relativeX" static="0" type="number">0</variable>
                         <variable constant="0" name="relativeY" static="0" type="number">0</variable>
