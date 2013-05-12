@@ -61,8 +61,8 @@
                         <width>847.000793457</width>
                         <height>514.082275391</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>0</opacity>
                     </world>
@@ -1652,6 +1652,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -1685,11 +1688,6 @@
                         <lastPositionY>0</lastPositionY>
                     </instance-variables>
                     <behavior-instances>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Edge</bound-by>
-                            </properties>
-                        </behavior-instance>
                         <behavior-instance type="Bullet">
                             <properties>
                                 <speed>0</speed>
@@ -1710,15 +1708,15 @@
                                 <projectile-speed>0</projectile-speed>
                             </properties>
                         </behavior-instance>
-                        <behavior-instance type="Platform">
+                        <behavior-instance type="ScrollTo" />
+                        <behavior-instance type="8Direction">
                             <properties>
-                                <max-speed>0</max-speed>
-                                <acceleration>0</acceleration>
-                                <deceleration>0</deceleration>
-                                <jump-strength>0</jump-strength>
-                                <gravity>0</gravity>
-                                <max-fall-speed>0</max-fall-speed>
-                                <default-controls>No</default-controls>
+                                <max-speed>200</max-speed>
+                                <acceleration>600</acceleration>
+                                <deceleration>500</deceleration>
+                                <directions>8 directions</directions>
+                                <set-angle>360 degree (smooth)</set-angle>
+                                <default-controls>Yes</default-controls>
                             </properties>
                         </behavior-instance>
                     </behavior-instances>
@@ -1743,6 +1741,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -2619,6 +2620,7 @@
                         <axis>X</axis>
                         <login></login>
                         <loginTextUID>0</loginTextUID>
+                        <map></map>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="MoveTo">
@@ -3192,6 +3194,10 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <action></action>
+                        <idAction>0</idAction>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
