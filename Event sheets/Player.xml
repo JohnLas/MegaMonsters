@@ -16,7 +16,7 @@
             <actions>
                 <action id="-3" name="Create object" type="System">
                     <param id="0" name="Object to create">player</param>
-                    <param id="1" name="Layer">2</param>
+                    <param id="1" name="Layer">1</param>
                     <param id="2" name="X">PosX</param>
                     <param id="3" name="Y">PosY</param>
                 </action>

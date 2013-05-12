@@ -8,16 +8,16 @@
     <saved-with-version>12302</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
+        <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
         <plugin author="Scirra" id="NinePatch" version="1">9-patch</plugin>
         <plugin author="Rex.Rainbow" id="Rex_Hash" version="0.5">Hash</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
-        <plugin author="Scirra" id="Button" version="1">Button</plugin>
-        <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
-        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
-        <plugin author="Scirra" id="Function" version="1">Function</plugin>
-        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
@@ -2595,11 +2595,15 @@
                 <member>GapBottom</member>
                 <member>HaieLeft</member>
                 <member>HaieTop</member>
+                <member>InMur</member>
+                <member>PCDesk</member>
+                <member>PCWall</member>
                 <member>PierreG</member>
                 <member>RocksBottom</member>
                 <member>RocksLeft</member>
                 <member>RocksRight</member>
                 <member>RocksTop</member>
+                <member>ShopWall</member>
                 <member>Wall</member>
                 <member>Water</member>
                 <member>WaterDown</member>
@@ -2691,7 +2695,7 @@
             </members>
         </family>
     </families>
-    <layout-folder expanded="0">
+    <layout-folder expanded="1">
         <layout-folder expanded="1" name="Map">
             <layout-folder expanded="1" name="MapRessources">
                 <layout>PlayerRessources.xml</layout>
@@ -2721,7 +2725,7 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-folder expanded="0" name="Map">
+        <event-folder expanded="1" name="Map">
             <event-sheet>Herbs.xml</event-sheet>
             <event-sheet>Map.xml</event-sheet>
             <event-sheet>Interfaces.xml</event-sheet>
