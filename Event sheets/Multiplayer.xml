@@ -4,9 +4,9 @@
     <name>Multiplayer</name>
     <events>
         <variable constant="0" name="playerId" static="0" type="text"></variable>
-        <event-group description="" title="MultiplayerListener">
+        <event-group collapsed="1" description="" title="MultiplayerListener">
             <sub-events>
-                <event-block>
+                <event-block collapsed="1">
                     <conditions>
                         <condition id="3" name="On message" type="WebSocket" />
                     </conditions>
@@ -17,7 +17,7 @@
                     </actions>
                     <sub-events>
                         <variable constant="0" name="bool" static="0" type="number">0</variable>
-                        <event-block>
+                        <event-block collapsed="1">
                             <conditions>
                                 <condition id="-8" name="Compare two values" type="System">
                                     <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
@@ -106,7 +106,7 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
-                        <event-block>
+                        <event-block collapsed="1">
                             <conditions>
                                 <condition id="-8" name="Compare two values" type="System">
                                     <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
@@ -259,7 +259,7 @@
                                 </action>
                             </actions>
                         </event-block>
-                        <event-block>
+                        <event-block collapsed="1">
                             <conditions>
                                 <condition id="-8" name="Compare two values" type="System">
                                     <param id="0" name="First value">Hash.AtKeys(&quot;action&quot;)</param>
@@ -318,65 +318,84 @@
         </event-group>
         <event-group collapsed="1" description="" title="MultiplayerSprite">
             <sub-events>
-                <event-block>
+                <event-block collapsed="1">
                     <conditions>
-                        <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Angle">0&#x0D;&#x0A;</param>
-                        </condition>
+                        <condition behavior="MoveTo" id="3" name="Is moving" type="OtherPlayer" />
                     </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" type="OtherPlayer">
-                            <param id="0" name="Animation">&quot;A0&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
+                    <actions />
+                    <sub-events>
+                        <event-block>
+                            <conditions>
+                                <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Angle">0&#x0D;&#x0A;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" type="OtherPlayer">
+                                    <param id="0" name="Animation">&quot;A0&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Angle">90&#x0D;&#x0A;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" type="OtherPlayer">
+                                    <param id="0" name="Animation">&quot;A90&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Angle">180&#x0D;&#x0A;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" type="OtherPlayer">
+                                    <param id="0" name="Animation">&quot;A180&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block>
+                            <conditions>
+                                <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
+                                    <param id="0" name="Comparison">0</param>
+                                    <param id="1" name="Angle">270&#x0D;&#x0A;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="4" name="Set animation" type="OtherPlayer">
+                                    <param id="0" name="Animation">&quot;A270&quot;</param>
+                                    <param id="1" name="From">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
                 <event-block>
                     <conditions>
-                        <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Angle">90&#x0D;&#x0A;</param>
-                        </condition>
+                        <condition id="-22" name="Else" type="System" />
                     </conditions>
                     <actions>
-                        <action id="4" name="Set animation" type="OtherPlayer">
-                            <param id="0" name="Animation">&quot;A90&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block>
-                    <conditions>
-                        <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Angle">180&#x0D;&#x0A;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" type="OtherPlayer">
-                            <param id="0" name="Animation">&quot;A180&quot;</param>
-                            <param id="1" name="From">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block>
-                    <conditions>
-                        <condition behavior="MoveTo" id="4" name="Compare moving angle" type="OtherPlayer">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Angle">270&#x0D;&#x0A;</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="4" name="Set animation" type="OtherPlayer">
-                            <param id="0" name="Animation">&quot;A270&quot;</param>
-                            <param id="1" name="From">1</param>
+                        <action id="2" name="Stop" type="OtherPlayer" />
+                        <action id="5" name="Set frame" type="OtherPlayer">
+                            <param id="0" name="Frame number">1&#x0D;&#x0A;</param>
                         </action>
                     </actions>
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" title="MultiplayerMovement">
+        <event-group collapsed="1" description="" title="MultiplayerMovement">
             <sub-events>
                 <event-block any="1">
                     <conditions>
@@ -530,7 +549,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" title="MultiplayerSendPosition">
+        <event-group collapsed="1" description="" title="MultiplayerSendPosition">
             <sub-events>
                 <comment>Coordonnées X et Y</comment>
                 <event-block>
@@ -699,7 +718,7 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" title="MultiplayerInteractions">
+        <event-group collapsed="1" description="" title="MultiplayerInteractions">
             <sub-events>
                 <variable constant="0" name="idOtherPlayer" static="1" type="number">1</variable>
                 <event-block>
@@ -778,30 +797,6 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-block>
-            <conditions>
-                <condition id="-6" name="Every X seconds" type="System">
-                    <param id="0" name="Interval (seconds)">0.5</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="0" name="Set text" type="Debug">
-                    <param id="0" name="Text">&quot; X (&quot;&amp;0&amp;&quot;) :  &quot;&amp;PositionXArray.At(0)&amp;&quot;  &quot;&amp;OtherPlayer.targetX&amp;&quot; Y (&quot;&amp;0&amp;&quot;) :  &quot;&amp;PositionYArray.At(0)&amp;&quot;  &quot;&amp;OtherPlayer.targetY</param>
-                </action>
-                <action disabled="1" id="-10" name="Set value" type="OtherPlayer">
-                    <param id="0" name="Instance variable">targetX</param>
-                    <param id="1" name="Value">PositionXArray.at(PositionXArray.Width-2,0,0)</param>
-                </action>
-                <action disabled="1" id="9" name="Delete" type="PositionXArray">
-                    <param id="0" name="Index">0</param>
-                    <param id="1" name="Axis">0</param>
-                </action>
-                <action disabled="1" id="-10" name="Set value" type="OtherPlayer">
-                    <param id="0" name="Instance variable">arrayX</param>
-                    <param id="1" name="Value">PositionXArray.AsJSON</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block>
             <conditions>
                 <condition id="0" name="On collision with another object" type="OtherPlayer">

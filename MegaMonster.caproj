@@ -2595,7 +2595,7 @@
                     </behavior-type>
                 </behaviors>
                 <animation-folder expanded="1">
-                    <animation framecount="3" loop="1" name="A0" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <animation framecount="3" loop="1" name="A0" pingpong="0" repeatcount="1" repeatto="0" speed="15">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <image-point name="Imagepoint 1" x="0.5" y="0.5" />
                             <image-point name="Imagepoint 2" x="0.5" y="0.5" />

@@ -11,11 +11,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout>Town1</layout>
-        <layout>Map1</layout>
         <layout>Map2</layout>
-        <layout active="1">Dun1</layout>
+        <layout>Dun1</layout>
         <layout>Map3</layout>
+        <layout>FacebookConnect</layout>
+        <layout>PlayerRessources</layout>
         <event-sheet>Player</event-sheet>
+        <event-sheet>FacebookConnect</event-sheet>
+        <event-sheet active="1">Multiplayer</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="Project settings" />
