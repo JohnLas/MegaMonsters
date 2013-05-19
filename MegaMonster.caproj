@@ -8,9 +8,9 @@
     <saved-with-version>12302</saved-with-version>
     <used-plugins>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
-        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="C2WebSocket" version="1">WebSocket</plugin>
+        <plugin author="Scirra" id="Facebook" version="1">Facebook</plugin>
         <plugin author="Scirra" id="Function" version="1">Function</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="List" version="1">List</plugin>
@@ -462,9 +462,12 @@
             <object-type name="InputLogin">
                 <plugin id="TextBox" />
             </object-type>
+            <object-type name="Debug">
+                <plugin id="Text" />
+            </object-type>
         </object-folder>
         <object-folder expanded="0" name="MapElements">
-            <object-folder expanded="1" name="Desert">
+            <object-folder expanded="0" name="Desert">
                 <object-type name="DesertBG">
                     <plugin id="TiledBg" />
                     <texture />
@@ -835,7 +838,7 @@
                     <texture />
                 </object-type>
             </object-folder>
-            <object-folder expanded="1" name="Town1">
+            <object-folder expanded="0" name="Town1">
                 <object-type name="bigtree">
                     <plugin id="Sprite" />
                     <animation-folder expanded="1">
@@ -1286,7 +1289,7 @@
                     <texture />
                 </object-type>
             </object-folder>
-            <object-folder expanded="1" name="PC">
+            <object-folder expanded="0" name="PC">
                 <object-type name="PCBackground">
                     <plugin id="TiledBg" />
                     <texture />
@@ -1465,7 +1468,7 @@
                     <texture />
                 </object-type>
             </object-folder>
-            <object-folder expanded="1" name="Grotte">
+            <object-folder expanded="0" name="Grotte">
                 <object-type name="Rocks">
                     <plugin id="Sprite" />
                     <animation-folder expanded="1">
@@ -1588,7 +1591,7 @@
                     </animation-folder>
                 </object-type>
             </object-folder>
-            <object-folder expanded="1" name="Shop">
+            <object-folder expanded="0" name="Shop">
                 <object-type name="ShopBG2">
                     <plugin id="TiledBg" />
                     <texture />
@@ -2099,7 +2102,14 @@
                         <frame duration="1" hotspotX="0" hotspotY="0" />
                         <frame duration="1" hotspotX="0" hotspotY="0" />
                         <frame duration="1" hotspotX="0" hotspotY="0" />
-                        <frame duration="1" hotspotX="0" hotspotY="0" />
+                        <frame duration="1" hotspotX="0" hotspotY="0">
+                            <collision-poly>
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0" />
+                            </collision-poly>
+                        </frame>
                         <frame duration="1" hotspotX="0" hotspotY="0" />
                     </animation>
                 </animation-folder>
@@ -2276,7 +2286,7 @@
                 </animation-folder>
             </object-type>
         </object-folder>
-        <object-folder expanded="0" name="Player">
+        <object-folder expanded="1" name="Player">
             <object-type name="player">
                 <plugin id="Sprite" />
                 <instance-variables>
@@ -2572,6 +2582,12 @@
                     <instance-variable name="login" type="string" />
                     <instance-variable name="loginTextUID" type="number" />
                     <instance-variable name="map" type="string" />
+                    <instance-variable name="targetJSON" type="string" />
+                    <instance-variable name="isInitialized" type="number" />
+                    <instance-variable name="arrayX" type="string" />
+                    <instance-variable name="arrayY" type="string" />
+                    <instance-variable name="arrayMap" type="string" />
+                    <instance-variable name="hasBeenWarped" type="number" />
                 </instance-variables>
                 <behaviors>
                     <behavior-type name="MoveTo">
@@ -2584,61 +2600,118 @@
                             <image-point name="Imagepoint 1" x="0.5" y="0.5" />
                             <image-point name="Imagepoint 2" x="0.5" y="0.5" />
                             <image-point name="Imagepoint 3" x="0.5" y="-0.157895" />
+                            <collision-poly>
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
+                            </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="3" loop="1" name="A90" pingpong="0" repeatcount="1" repeatto="0" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                                <point x="1" y="1" />
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
                             </collision-poly>
                         </frame>
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
-                                <point x="1" y="1" />
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
                             </collision-poly>
                         </frame>
                     </animation>
                     <animation framecount="3" loop="1" name="A180" pingpong="0" repeatcount="1" repeatto="0" speed="5">
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                            <collision-poly>
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
+                            </collision-poly>
+                        </frame>
                     </animation>
                     <animation framecount="3" loop="1" name="A270" pingpong="0" repeatcount="1" repeatto="0" speed="5">
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
                             </collision-poly>
                         </frame>
                         <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                             <collision-poly>
-                                <point x="1" y="1" />
-                                <point x="0" y="1" />
-                                <point x="0" y="0" />
-                                <point x="1" y="0" />
+                                <point x="0.357143" y="0.263158" />
+                                <point x="0.642857" y="0.263158" />
+                                <point x="0.642857" y="0.736842" />
+                                <point x="0.357143" y="0.736842" />
                             </collision-poly>
                         </frame>
                     </animation>
                 </animation-folder>
+            </object-type>
+            <object-type global="1" name="PositionMapArray">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="PositionXArray">
+                <plugin id="Arr" />
+            </object-type>
+            <object-type global="1" name="PositionYArray">
+                <plugin id="Arr" />
             </object-type>
         </object-folder>
         <object-folder expanded="0" name="Other">
@@ -2854,24 +2927,24 @@
                 <layout>PlayerRessources.xml</layout>
                 <layout>InterfacesRessources.xml</layout>
             </layout-folder>
-            <layout-folder expanded="1" name="Map">
+            <layout-folder expanded="0" name="Map">
                 <layout>Map.xml</layout>
                 <layout>Map1.xml</layout>
                 <layout>Map3.xml</layout>
                 <layout>Dun1.xml</layout>
                 <layout>Map2.xml</layout>
             </layout-folder>
-            <layout-folder expanded="1" name="Town">
+            <layout-folder expanded="0" name="Town">
                 <layout>Town1.xml</layout>
             </layout-folder>
         </layout-folder>
-        <layout-folder expanded="1" name="Battle">
+        <layout-folder expanded="0" name="Battle">
             <layout-folder expanded="0" name="SavageMonster">
                 <layout>Battle.xml</layout>
             </layout-folder>
             <layout-folder expanded="1" name="OtherPlayer" />
         </layout-folder>
-        <layout-folder expanded="1" name="Menu">
+        <layout-folder expanded="0" name="Menu">
             <layout>FacebookConnect.xml</layout>
             <layout>CreateAvatar.xml</layout>
             <layout>ChoosePokemon.xml</layout>
@@ -2879,7 +2952,7 @@
         <layout>Layout 1.xml</layout>
     </layout-folder>
     <event-folder expanded="1">
-        <event-folder expanded="1" name="Map">
+        <event-folder expanded="0" name="Map">
             <event-sheet>Herbs.xml</event-sheet>
             <event-sheet>Map.xml</event-sheet>
             <event-sheet>Interfaces.xml</event-sheet>
@@ -2891,7 +2964,7 @@
         <event-folder expanded="0" name="Battle">
             <event-sheet>battle.xml</event-sheet>
         </event-folder>
-        <event-folder expanded="1" name="Menu">
+        <event-folder expanded="0" name="Menu">
             <event-sheet>FacebookConnect.xml</event-sheet>
             <event-sheet>CreateAvatar.xml</event-sheet>
             <event-sheet>ChoosePokemon.xml</event-sheet>

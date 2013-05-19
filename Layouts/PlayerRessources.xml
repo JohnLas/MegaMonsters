@@ -131,7 +131,7 @@
                         <y>91</y>
                         <z>0</z>
                         <width>30</width>
-                        <height>40</height>
+                        <height>45</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -262,12 +262,18 @@
                         <login></login>
                         <loginTextUID>0</loginTextUID>
                         <map></map>
+                        <targetJSON>{}</targetJSON>
+                        <isInitialized>0</isInitialized>
+                        <arrayX></arrayX>
+                        <arrayY></arrayY>
+                        <arrayMap></arrayMap>
+                        <hasBeenWarped>0</hasBeenWarped>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="MoveTo">
                             <properties>
                                 <activated>Yes</activated>
-                                <max-speed>130</max-speed>
+                                <max-speed>150</max-speed>
                                 <acceleration>0</acceleration>
                                 <deceleration>0</deceleration>
                             </properties>
@@ -402,6 +408,28 @@
             <effects />
         </layer>
     </layers>
-    <nonworld-instances />
+    <nonworld-instances>
+        <instance type="PositionXArray">
+            <properties>
+                <width>1</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="PositionYArray">
+            <properties>
+                <width>1</width>
+                <height>1</height>
+                <depth>1</depth>
+            </properties>
+        </instance>
+        <instance type="PositionMapArray">
+            <properties>
+                <width>1</width>
+                <height>0</height>
+                <depth>0</depth>
+            </properties>
+        </instance>
+    </nonworld-instances>
     <effects />
 </c2layout>

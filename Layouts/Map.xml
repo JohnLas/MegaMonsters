@@ -2621,6 +2621,12 @@
                         <login></login>
                         <loginTextUID>0</loginTextUID>
                         <map></map>
+                        <targetJSON>{}</targetJSON>
+                        <isInitialized>0</isInitialized>
+                        <arrayX></arrayX>
+                        <arrayY></arrayY>
+                        <arrayMap></arrayMap>
+                        <hasBeenWarped>0</hasBeenWarped>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="MoveTo">
